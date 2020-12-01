@@ -12,12 +12,12 @@ using namespace std;
 
 class Gameboard
 {
-private: 
+protected: 
 	char gameboard[10][10];
 public:
 	Gameboard();
 	void static GameRules();
-	void isHit(int ver, int hor);
+	virtual void isHit(int ver, int hor);
 	void printBoard();
 	void randomlyInitBoard();
 	void purposelyInitBoard();

@@ -56,7 +56,7 @@ void Gameboard::printBoard()
 
 void Gameboard::isHit(int ver, int hor)
 {
-	gameboard[hor][ver] = 'x';
+	gameboard[ver][hor] = '*';
 }
 
 void Gameboard::randomlyInitBoard()
